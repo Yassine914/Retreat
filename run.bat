@@ -16,16 +16,16 @@ if "%1" == "c" (
 
 REM Create a build directory if it doesn't exist
 if not exist build mkdir build
-cd build
+pushd build
 
 REM Run cmake if cleaning
 if "%1" == "clean" (
       call :write_text "running cmake"
-      cmake ./ -B ./build -G "Unix Makefiles"
+      cmake ../ -B . -G "Unix Makefiles"
       echo.
 ) else if "%1" == "c" (
       call :write_text "running cmake"
-      cmake ./ -B ./build -G "Unix Makefiles"
+      cmake ../ -B . -G "Unix Makefiles"
       echo.
 )
 
@@ -40,6 +40,7 @@ call :exit_if_error "MAKE FAILED"
 call :write_header "RUNNING PROJECT"
 .\bin\retreat
 
+popd
 exit
 
 REM ---------------------------------------------
