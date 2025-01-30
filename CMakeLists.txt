@@ -13,7 +13,8 @@ project(Retreat)
 # ----- SOURCE -----
 file(GLOB_RECURSE SRC CMAKE_CONFIGURE_DEPENDS "${SRC_DIR}/*.cpp")
 
-add_executable(Retreat "${SRC}" "src/main.cpp")
+# add_executable(Retreat "${SRC}" "src/main.cpp")
+add_executable(Retreat "${SRC}")
 
 target_compile_definitions("${CMAKE_PROJECT_NAME}" PUBLIC DDEBUG=true)
 
@@ -36,7 +37,7 @@ include_directories("${LIB_DIR}/GLFW/include/")
 find_package(Vulkan REQUIRED)
 
 # glm
-include_directories("${LIB_DIR}/glm")
+# include_directories("${LIB_DIR}/glm")
 
 # file(GLOB IMGUI_SRC CMAKE_CONFIGURE_DEPENDS "${LIB_DIR}/imgui/src/*.cpp")
 # add_library(imgui STATIC "${IMGUI_SRC}" "src/main.cpp")
