@@ -1,59 +1,61 @@
 {
+    find_programver = {
+        ["g++"] = "13.3.0"
+    },
+    find_program = {
+        nim = false,
+        git = "git",
+        gcc = "gcc",
+        ["vswhere.exe"] = [[C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe]],
+        ping = "ping",
+        clang = "clang",
+        ["g++"] = "g++"
+    },
+    ["core.tools.gcc.has_cflags"] = {
+        ["g++_13.3.0"] = {
+            ["-dumpmachine"] = true,
+            ["--help"] = true,
+            ["--target-help"] = true,
+            ["-pass-exit-codes"] = true,
+            ["--param"] = true,
+            ["--version"] = true,
+            ["-E"] = true,
+            ["-Xpreprocessor"] = true,
+            ["-S"] = true,
+            ["-time"] = true,
+            ["-print-multi-directory"] = true,
+            ["-print-search-dirs"] = true,
+            ["-c"] = true,
+            ["-Xassembler"] = true,
+            ["-print-libgcc-file-name"] = true,
+            ["-print-sysroot-headers-suffix"] = true,
+            ["-pie"] = true,
+            ["-dumpspecs"] = true,
+            ["-print-multi-lib"] = true,
+            ["-v"] = true,
+            ["-print-sysroot"] = true,
+            ["-Xlinker"] = true,
+            ["-shared"] = true,
+            ["-pipe"] = true,
+            ["-x"] = true,
+            ["-o"] = true,
+            ["-dumpversion"] = true,
+            ["-print-multi-os-directory"] = true,
+            ["-B"] = true,
+            ["-print-multiarch"] = true,
+            ["-save-temps"] = true,
+            ["-no-canonical-prefixes"] = true
+        }
+    },
     ["lib.detect.has_flags"] = {
         ["windows_x64_g++_13.3.0_cxx_cxflags_-m64_-Wno-gnu-line-marker -Werror"] = true,
         ["windows_x64_g++_13.3.0_cxx_cxflags_-m64_-fdiagnostics-color=always"] = true,
         ["windows_x64_g++_13.3.0_cxx_cxflags_-m64_-MMD -MF"] = true
     },
-    find_program = {
-        nim = false,
-        clang = "clang",
-        ["vswhere.exe"] = [[C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe]],
-        ["g++"] = "g++",
-        gcc = "gcc"
-    },
-    find_programver = {
-        ["g++"] = "13.3.0"
-    },
-    find_program_gcc_arch_x64_packages_gcc_plat_windows_checktoolsh = {
-        ["g++"] = "g++"
-    },
     find_program_gcc_arch_x64_packages_gcc_plat_windows_checktoolld = {
         ["g++"] = "g++"
     },
-    ["core.tools.gcc.has_cflags"] = {
-        ["g++_13.3.0"] = {
-            ["-o"] = true,
-            ["-no-canonical-prefixes"] = true,
-            ["--help"] = true,
-            ["-print-multi-lib"] = true,
-            ["-x"] = true,
-            ["-c"] = true,
-            ["-time"] = true,
-            ["-E"] = true,
-            ["-print-libgcc-file-name"] = true,
-            ["-print-multi-directory"] = true,
-            ["-v"] = true,
-            ["-Xpreprocessor"] = true,
-            ["-print-sysroot-headers-suffix"] = true,
-            ["-pie"] = true,
-            ["-dumpspecs"] = true,
-            ["-Xassembler"] = true,
-            ["-print-multiarch"] = true,
-            ["-S"] = true,
-            ["-shared"] = true,
-            ["--target-help"] = true,
-            ["-print-search-dirs"] = true,
-            ["--version"] = true,
-            ["-dumpversion"] = true,
-            ["-print-multi-os-directory"] = true,
-            ["-dumpmachine"] = true,
-            ["-Xlinker"] = true,
-            ["-print-sysroot"] = true,
-            ["-save-temps"] = true,
-            ["-pipe"] = true,
-            ["--param"] = true,
-            ["-pass-exit-codes"] = true,
-            ["-B"] = true
-        }
+    find_program_gcc_arch_x64_packages_gcc_plat_windows_checktoolsh = {
+        ["g++"] = "g++"
     }
 }

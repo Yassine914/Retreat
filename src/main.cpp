@@ -5,6 +5,6 @@
 
 int main()
 {
-    std::cout << "hello world, vulkan and sdl are successfully included" << std::endl;
+    std::cout << "[RETREAT]: vulkan and sdl are successfully included" << std::endl;
     return 0;
 }

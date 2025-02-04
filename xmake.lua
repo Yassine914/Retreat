@@ -7,7 +7,6 @@ target("retreat")
     add_files("src/*.cpp")
     add_headerfiles("src/**.h")
 
-    -- add_includedirs("C://msys64/mingw64/include/c++/v1")
     add_includedirs("thirdparty/SDL3/include")
     add_linkdirs("thirdparty/SDL3/bin")
 

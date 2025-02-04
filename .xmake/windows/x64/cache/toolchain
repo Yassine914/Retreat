@@ -1,108 +1,108 @@
 {
-    tool_target_retreat_windows_x64_cxx = {
+    nasm_arch_x64_plat_windows = {
+        arch = "x64",
+        __checked = true,
+        __global = true,
+        plat = "windows"
+    },
+    gcc_arch_x64_packages_gcc_plat_windows = {
+        arch = "x64",
+        __checked = {
+            name = "gcc",
+            program = "gcc"
+        },
+        packages = "gcc",
+        plat = "windows"
+    },
+    fpc_arch_x64_plat_windows = {
+        arch = "x64",
+        __checked = true,
+        __global = true,
+        plat = "windows"
+    },
+    cuda_arch_x64_plat_windows = {
+        arch = "x64",
+        __checked = true,
+        __global = true,
+        plat = "windows"
+    },
+    swift_arch_x64_plat_windows = {
+        arch = "x64",
+        __checked = true,
+        __global = true,
+        plat = "windows"
+    },
+    tool_target_retreat_windows_x64_sh = {
+        toolchain_info = {
+            name = "gcc",
+            cachekey = "gcc_arch_x64_packages_gcc_plat_windows",
+            arch = "x64",
+            plat = "windows"
+        },
         program = "g++",
         toolname = "gxx"
     },
-    cuda_arch_x64_plat_windows = {
-        plat = "windows",
-        __checked = true,
-        arch = "x64",
-        __global = true
-    },
-    nasm_arch_x64_plat_windows = {
-        plat = "windows",
-        __checked = true,
-        arch = "x64",
-        __global = true
-    },
-    fpc_arch_x64_plat_windows = {
-        plat = "windows",
-        __checked = true,
-        arch = "x64",
-        __global = true
-    },
-    go_arch_x64_plat_windows = {
-        plat = "windows",
-        __checked = true,
-        arch = "x64",
-        __global = true
+    tool_target_retreat_windows_x64_ld = {
+        toolchain_info = {
+            name = "gcc",
+            cachekey = "gcc_arch_x64_packages_gcc_plat_windows",
+            arch = "x64",
+            plat = "windows"
+        },
+        program = "g++",
+        toolname = "gxx"
     },
     clang_arch_x64_plat_windows = {
-        plat = "windows",
+        arch = "x64",
         __checked = {
             name = "clang",
             program = "clang"
         },
-        arch = "x64",
-        __global = true
+        __global = true,
+        plat = "windows"
     },
     msvc_arch_x64_plat_windows = {
-        plat = "windows",
-        __checked = false,
         arch = "x64",
-        __global = true
+        __checked = false,
+        __global = true,
+        plat = "windows"
+    },
+    rust_arch_x64_plat_windows = {
+        arch = "x64",
+        __checked = true,
+        __global = true,
+        plat = "windows"
+    },
+    tool_target_retreat_windows_x64_cxx = {
+        program = "g++",
+        toolname = "gxx"
     },
     tool_target_retreat_windows_x64_cc = {
         program = "gcc",
         toolname = "gcc"
     },
-    gfortran_arch_x64_plat_windows = {
-        plat = "windows",
-        __checked = true,
+    nim_arch_x64_plat_windows = {
         arch = "x64",
-        __global = true
+        __checked = false,
+        __global = true,
+        plat = "windows"
+    },
+    gfortran_arch_x64_plat_windows = {
+        arch = "x64",
+        __checked = true,
+        __global = true,
+        plat = "windows"
+    },
+    go_arch_x64_plat_windows = {
+        arch = "x64",
+        __checked = true,
+        __global = true,
+        plat = "windows"
     },
     yasm_arch_x64_plat_windows = {
-        plat = "windows",
+        arch = "x64",
         __checked = true,
-        arch = "x64",
-        __global = true
-    },
-    tool_target_retreat_windows_x64_ld = {
-        program = "g++",
-        toolname = "gxx",
-        toolchain_info = {
-            name = "gcc",
-            cachekey = "gcc_arch_x64_packages_gcc_plat_windows",
-            arch = "x64",
-            plat = "windows"
-        }
-    },
-    swift_arch_x64_plat_windows = {
-        plat = "windows",
-        __checked = true,
-        arch = "x64",
-        __global = true
-    },
-    gcc_arch_x64_packages_gcc_plat_windows = {
-        packages = "gcc",
-        plat = "windows",
-        arch = "x64",
-        __checked = {
-            name = "gcc",
-            program = "gcc"
-        }
-    },
-    nim_arch_x64_plat_windows = {
-        plat = "windows",
-        __checked = false,
-        arch = "x64",
-        __global = true
-    },
-    rust_arch_x64_plat_windows = {
-        plat = "windows",
-        __checked = true,
-        arch = "x64",
-        __global = true
-    },
-    tool_target_retreat_windows_x64_sh = {
-        program = "g++",
-        toolname = "gxx",
-        toolchain_info = {
-            name = "gcc",
-            cachekey = "gcc_arch_x64_packages_gcc_plat_windows",
-            arch = "x64",
-            plat = "windows"
-        }
+        __global = true,
+        plat = "windows"
     }
 }

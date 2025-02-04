@@ -5,3 +5,5 @@
     - make a small linear algebra library
 
 [ ] initialize vulkan
+
+[ ] initialize a window using SDL

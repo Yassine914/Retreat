@@ -1,6 +1,8 @@
 # dirs
 .vscode/
+.xmake/
 build/
+bin/
 
 # Prerequisites
 *.d
