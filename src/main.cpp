@@ -5,6 +5,6 @@
 
 int main()
 {
-    // std::cout << "hello world, vulkan and glfw are successfully included" << std::endl;
+    std::cout << "hello world, vulkan and sdl are successfully included" << std::endl;
     return 0;
 }

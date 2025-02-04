@@ -1,11 +1,12 @@
 {
-    options = {
-        cc = "gcc",
-        arch = "x64",
-        plat = "windows"
+    mtimes = {
+        ["xmake.lua"] = 1738696317
     },
     recheck = false,
-    mtimes = {
-        ["xmake.lua"] = 1738694890
+    options = {
+        cc = "gcc",
+        cxx = "g++",
+        arch = "x64",
+        plat = "windows"
     }
 }

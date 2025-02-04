@@ -1,10 +1,13 @@
 target("retreat")
     set_kind("binary")
-    set_toolchains("@clang")
+    set_toolchains("@gcc")
+    set_toolset("cxx", "g++")
+    set_toolset("cc", "gcc")
 
     add_files("src/*.cpp")
     add_headerfiles("src/**.h")
 
+    -- add_includedirs("C://msys64/mingw64/include/c++/v1")
     add_includedirs("thirdparty/SDL3/include")
     add_linkdirs("thirdparty/SDL3/bin")
 

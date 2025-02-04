@@ -19,6 +19,19 @@
         "xmake f -p windows -a x64 --cc=clang --cxx=clang++",
         "xmake ",
         "xmake f -p windows -a x64 --cc=gcc",
-        "xmake "
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake f -p windows -a x64 --cc=gcc --cxx=g++",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake run",
+        "xmake run"
     }
 }
