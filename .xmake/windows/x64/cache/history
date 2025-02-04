@@ -1,0 +1,24 @@
+{
+    cmdlines = {
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake f --toolchain=clang -c",
+        "xmake ",
+        "xmake f --toolchain=gcc -c",
+        "xmake ",
+        "xmake f --toolchain=gcc",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake f -p windows -a x64 --cc=clang --cxx=clang++",
+        "xmake ",
+        "xmake f -p windows -a x64 --cc=gcc",
+        "xmake "
+    }
+}
