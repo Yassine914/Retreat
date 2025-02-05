@@ -1,10 +1,18 @@
-#include <iostream>
+#include "core/defines.h"
+#include "core/logger.h"
+#include "core/error.h"
 
-#include <SDL3/SDL.h>
-#include <vulkan/vulkan.h>
+#include "vk/engine.h"
 
 int main()
 {
-    std::cout << "[RETREAT]: vulkan and sdl are successfully included" << std::endl;
+#ifdef RETREAT_NDEBUG
+    LOG_CHANGE_PRIORITY(LOG_NONE);
+#else
+    LOG_CHANGE_PRIORITY(LOG_ALL);
+#endif
+
+    LLOG(GREEN_TEXT("[RETREAT]: "), "Engine Starting....");
+
     return 0;
 }

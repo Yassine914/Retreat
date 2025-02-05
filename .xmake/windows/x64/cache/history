@@ -40,6 +40,14 @@
         [[xmake lua C:\Users\ADMIN\xmake\modules\private\utils\statistics.lua]],
         [[xmake lua C:\Users\ADMIN\xmake\actions\build\cleaner.lua]],
         "xmake run",
+        "xmake run",
+        "xmake ",
+        [[xmake lua C:\Users\ADMIN\xmake\actions\build\cleaner.lua]],
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
         "xmake run"
     }
 }

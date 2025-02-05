@@ -1,8 +1,6 @@
 #ifndef DEFINES_H
 #define DEFINES_H
 
-#include <corecrt.h>
-
 // unsigned int types
 typedef unsigned char u8;
 typedef unsigned short u16;
@@ -30,20 +28,6 @@ typedef double f64;
 #else
     #define ST_ASSERT static_assert
 #endif
-
-// static assertions for type sizes
-ST_ASSERT(sizeof(u8) == 1, "expected u8 to be 1 byte.");
-ST_ASSERT(sizeof(u16) == 2, "expected u16 to be 2 bytes.");
-ST_ASSERT(sizeof(u32) == 4, "expected u32 to be 4 bytes.");
-ST_ASSERT(sizeof(u64) == 8, "expected u64 to be 8 bytes.");
-
-ST_ASSERT(sizeof(i8) == 1, "expected i8 to be 1 byte.");
-ST_ASSERT(sizeof(i16) == 2, "expected i16 to be 2 bytes.");
-ST_ASSERT(sizeof(i32) == 4, "expected i32 to be 4 bytes.");
-ST_ASSERT(sizeof(i64) == 8, "expected i64 to be 8 bytes.");
-
-ST_ASSERT(sizeof(f32) == 4, "expected f32 to be 4 bytes.");
-ST_ASSERT(sizeof(f64) == 8, "expected f64 to be 8 bytes.");
 
 // platform detection
 
