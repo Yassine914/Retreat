@@ -8,7 +8,7 @@ class Engine
     bool is_initialized{false};
     i32 frame_no{0};
     bool stop_rendering{false};
-    VkExtent2D window_extent{1700, 900};
+    VkExtent2D window_extent{600, 600};
 
     struct SDL_Window *window{nullptr};
 

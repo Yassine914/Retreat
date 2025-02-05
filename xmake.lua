@@ -1,5 +1,10 @@
 add_rules("mode.debug", "mode.release")
 
+-- option("mode")
+    -- set_default("debug")
+
+set_defaultmode("debug")
+
 -- target("console")
 --     set_kind("binary")
 --     add_files("src/*.c")
@@ -17,6 +22,7 @@ target("retreat")
     add_files("src/*.cpp")
     add_headerfiles("src/**.h")
     add_files("src/core/*.cpp")
+    add_files("src/vk/*.cpp")
     
     add_includedirs("src")
     add_includedirs("src/core")

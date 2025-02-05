@@ -12,7 +12,15 @@ int main()
     LOG_CHANGE_PRIORITY(LOG_ALL);
 #endif
 
-    LLOG(GREEN_TEXT("[RETREAT]: "), "Engine Starting....");
+    LLOG(GREEN_TEXT("[RETREAT]: "), "Engine Starting....\n");
+
+    Engine *rengine;
+
+    rengine->Init();
+
+    rengine->Run();
+
+    rengine->Cleanup();
 
     return 0;
 }

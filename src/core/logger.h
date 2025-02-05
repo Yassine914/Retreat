@@ -7,6 +7,7 @@
 #include <string>
 #include <sstream>
 #include <iomanip>
+#include <cstring>
 
 #include <mutex>
 #define LOCK_MUTEX(x) std::lock_guard<std::mutex> lock(x)

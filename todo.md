@@ -5,6 +5,7 @@
 <!-- - add a couple more classes to YLib to make it complete -->
 <!-- - make a small linear algebra library -->
 
-[ ] initialize vulkan
-
 [ ] initialize a window using SDL
+    - use SDL3 with a different guide (SDL2 causes alot of errors)
+
+[ ] initialize vulkan

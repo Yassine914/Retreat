@@ -1,3 +1,5 @@
+#pragma once
+
 #include "defines.h"
 
 // error code macros
@@ -16,15 +18,9 @@ class Error
     const u32 code;
 
     public:
-    Error(const char *message)
-        : message{message}, code{YLIB_ERR_UNKNOWN}
-    {
-    }
+    Error(const char *message) : message{message}, code{YLIB_ERR_UNKNOWN} {}
 
-    Error(const u32 code, const char *message)
-        : code{code}, message{message}
-    {
-    }
+    Error(const u32 code, const char *message) : code{code}, message{message} {}
 
     const char *what() const { return message; }
 };

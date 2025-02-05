@@ -2,61 +2,61 @@
     find_program_gcc_arch_x64_packages_gcc_plat_windows_checktoolsh = {
         ["g++"] = "g++"
     },
-    find_program = {
-        ["cl.exe"] = [[G:\Apps\MSVS\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64\cl.exe]],
-        nim = false,
-        gcc = "gcc",
-        ["g++"] = "g++"
+    find_programver = {
+        ["G:\\Apps\\MSVS\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\cl.exe"] = "19.42.34436",
+        ["g++"] = "13.3.0"
     },
     ["lib.detect.has_flags"] = {
+        ["windows_x64_g++_13.3.0_cxx__-m64_-O3"] = true,
         ["windows_x64_g++_13.3.0_cxx_cxflags_-m64_-fdiagnostics-color=always"] = true,
+        ["windows_x64_g++_13.3.0_cxx_cxflags_-m64_-MMD -MF"] = true,
         ["windows_x64_g++_13.3.0_cxx_cxflags_-m64_-fvisibility-inlines-hidden"] = true,
         ["windows_x64_g++_13.3.0_cxx_cxflags_-m64_-DNDEBUG"] = true,
-        ["windows_x64_g++_13.3.0_cxx_cxflags_-m64_-Wno-gnu-line-marker -Werror"] = true,
-        ["windows_x64_g++_13.3.0_cxx__-m64_-O3"] = true,
-        ["windows_x64_g++_13.3.0_cxx_cxflags_-m64_-MMD -MF"] = true
+        ["windows_x64_g++_13.3.0_cxx_cxflags_-m64_-Wno-gnu-line-marker -Werror"] = true
+    },
+    find_program = {
+        gcc = "gcc",
+        ["g++"] = "g++",
+        ["cl.exe"] = [[G:\Apps\MSVS\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64\cl.exe]],
+        nim = false
     },
     find_program_gcc_arch_x64_packages_gcc_plat_windows_checktoolld = {
         ["g++"] = "g++"
     },
     ["core.tools.gcc.has_cflags"] = {
         ["g++_13.3.0"] = {
-            ["-shared"] = true,
-            ["-o"] = true,
-            ["-v"] = true,
-            ["-dumpspecs"] = true,
-            ["--target-help"] = true,
-            ["-E"] = true,
-            ["-print-multiarch"] = true,
-            ["-dumpmachine"] = true,
-            ["-c"] = true,
-            ["--param"] = true,
-            ["-dumpversion"] = true,
-            ["-Xassembler"] = true,
-            ["-print-sysroot"] = true,
-            ["--help"] = true,
-            ["-print-sysroot-headers-suffix"] = true,
-            ["-print-multi-os-directory"] = true,
-            ["-pass-exit-codes"] = true,
-            ["-save-temps"] = true,
-            ["-print-multi-directory"] = true,
-            ["-print-search-dirs"] = true,
-            ["-pipe"] = true,
-            ["-B"] = true,
-            ["-Xpreprocessor"] = true,
             ["-S"] = true,
-            ["-pie"] = true,
-            ["-no-canonical-prefixes"] = true,
-            ["-time"] = true,
-            ["-print-libgcc-file-name"] = true,
+            ["-dumpversion"] = true,
             ["-Xlinker"] = true,
+            ["--target-help"] = true,
+            ["-print-multiarch"] = true,
+            ["--help"] = true,
+            ["-Xassembler"] = true,
+            ["-print-multi-os-directory"] = true,
+            ["-B"] = true,
+            ["-pipe"] = true,
+            ["-print-libgcc-file-name"] = true,
+            ["-v"] = true,
+            ["-shared"] = true,
+            ["-dumpmachine"] = true,
+            ["-E"] = true,
+            ["-o"] = true,
             ["-print-multi-lib"] = true,
-            ["-x"] = true,
-            ["--version"] = true
+            ["-dumpspecs"] = true,
+            ["--version"] = true,
+            ["-pie"] = true,
+            ["-c"] = true,
+            ["-time"] = true,
+            ["--param"] = true,
+            ["-print-multi-directory"] = true,
+            ["-save-temps"] = true,
+            ["-print-sysroot-headers-suffix"] = true,
+            ["-print-search-dirs"] = true,
+            ["-no-canonical-prefixes"] = true,
+            ["-Xpreprocessor"] = true,
+            ["-print-sysroot"] = true,
+            ["-pass-exit-codes"] = true,
+            ["-x"] = true
         }
-    },
-    find_programver = {
-        ["G:\\Apps\\MSVS\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\cl.exe"] = "19.42.34436",
-        ["g++"] = "13.3.0"
     }
 }
